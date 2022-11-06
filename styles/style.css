@@ -59,20 +59,18 @@
     display: flex;
 }
 
+.contacts svg {
+    margin-right: 20px;
+}
+
 .mobile {
     margin-right: 30px;
 }
 
-.mobile svg, .mobile span {
+.mobile svg, .mobile span, .stationary svg, .stationary span {
     vertical-align: middle;
     font-family: Roboto, sans-serif;
-    font-size: 25px;
-}
-
-.stationary svg, .stationary span {
-    vertical-align: middle;
-    font-family: Roboto, sans-serif;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .main {
