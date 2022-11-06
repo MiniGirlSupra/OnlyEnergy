@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Аренда кабелей и генераторов</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="images/Logo.png" alt="OnlyEnergy">
+        </div>
+
+        <div class="contacts">
+            <div class="mobile">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.6389 1.94425C13.0486 1.01616 14.8384 1.55039 15.6471 2.89808L19.2044 8.82699C20.0188 10.1844 19.6232 11.9422 18.3058 12.8198L15.8269 14.471C15.6272 14.604 15.5963 14.8468 15.7102 15.0101C16.9036 16.7196 18.9622 19.5341 20.7138 21.2857C22.4655 23.0374 25.2804 25.0963 26.9899 26.2896C27.1531 26.4035 27.3958 26.3726 27.5289 26.1731L29.1815 23.6941C30.0593 22.3774 31.8166 21.9822 33.1736 22.7964L39.1027 26.3538C40.4506 27.1626 40.9847 28.953 40.056 30.3627C39.4304 31.3124 38.4923 32.609 37.3555 33.7702C36.2408 34.9089 34.8175 36.0402 33.2051 36.4723C30.935 37.0806 28.2496 36.3069 26.3187 35.5382C24.314 34.7401 22.7697 33.7994 22.6387 33.7189L22.6309 33.7141L22.6122 33.7023L22.5962 33.6919L22.5933 33.69C22.4133 33.5711 17.3555 30.2285 14.563 27.436C11.7707 24.6436 8.42901 19.5872 8.31039 19.4075L8.3076 19.4033L8.29718 19.3873L8.28537 19.3685L8.28063 19.3608C8.2002 19.23 7.2594 17.6857 6.4612 15.6809C5.6924 13.75 4.91855 11.0644 5.5272 8.79422C5.95953 7.18168 7.09131 5.75845 8.23045 4.64391C9.39205 3.50739 10.689 2.5696 11.6389 1.94425ZM13.2451 4.03132C13.1723 4.0129 13.1033 4.0226 13.0362 4.06677C12.1587 4.64448 11.0086 5.481 10.0076 6.46031C8.98426 7.46159 8.23817 8.4957 7.98171 9.45228C7.60462 10.8588 8.07183 12.8564 8.82215 14.7409C9.51979 16.4931 10.3443 17.8641 10.4386 18.0187C10.6621 18.3565 13.8155 23.0946 16.36 25.6391C18.9045 28.1836 23.6427 31.3372 23.9807 31.5609C24.1355 31.6552 25.5064 32.4796 27.2586 33.1772C29.1431 33.9274 31.1407 34.3946 32.5473 34.0177C33.5039 33.7613 34.5382 33.0155 35.5396 31.9925C36.5191 30.9919 37.3559 29.8421 37.9339 28.9647C37.9781 28.8976 37.9878 28.8287 37.9694 28.7558C37.9498 28.6781 37.8954 28.593 37.7952 28.5329L31.8662 24.9755C31.6723 24.8592 31.4213 24.9156 31.2959 25.1037L29.6433 27.5827C28.7426 28.9336 26.9002 29.326 25.5354 28.3733C23.8277 27.1813 20.8442 25.0099 18.9169 23.0826C16.9897 21.1554 14.8186 18.1723 13.6265 16.4646C12.6735 15.0994 13.0664 13.2565 14.4181 12.3561L16.897 10.7048C17.0852 10.5794 17.1417 10.3283 17.0253 10.1344L13.468 4.20552C13.4079 4.10539 13.3228 4.05098 13.2451 4.03132Z"
+                          fill="#EA8B2A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M23.8136 8.88828C23.9001 8.1919 24.5347 7.69746 25.2311 7.78392L25.0745 9.04484C25.2311 7.78392 25.2316 7.78399 25.2321 7.78405L25.2331 7.78418L25.2355 7.78448L25.241 7.7852L25.2554 7.78712L25.2972 7.79312C25.3307 7.79814 25.3755 7.80529 25.4309 7.8151C25.5417 7.83472 25.6951 7.86498 25.8859 7.91008C26.2675 8.00025 26.7994 8.14999 27.4396 8.39314C28.7205 8.87966 30.4353 9.74059 32.2409 11.2452C34.0484 12.7515 35.103 14.1998 35.7107 15.3109C36.0137 15.8649 36.2035 16.331 36.32 16.6735C36.3783 16.8446 36.4182 16.9847 36.4448 17.0892C36.4582 17.1415 36.4682 17.1849 36.4755 17.2189L36.4845 17.2626L36.4877 17.2791L36.489 17.286L36.4895 17.289L36.4898 17.2905C36.4899 17.2912 36.4901 17.2919 35.2393 17.5155L36.4901 17.2919C36.6136 17.9826 36.1537 18.6428 35.4629 18.7663C34.7772 18.8889 34.1216 18.4366 33.9913 17.7542C33.9903 17.7496 33.9875 17.737 33.9824 17.7169C33.9715 17.6744 33.9504 17.5982 33.9143 17.4922C33.8422 17.2804 33.7103 16.9491 33.4812 16.5303C33.0247 15.6957 32.1735 14.4969 30.6141 13.1974C29.0528 11.8964 27.5911 11.169 26.5373 10.7687C26.01 10.5685 25.585 10.4502 25.3014 10.3831C25.1597 10.3496 25.0536 10.329 24.9879 10.3174C24.9551 10.3116 24.9324 10.308 24.9206 10.3063L24.9114 10.3049C24.2184 10.2153 23.7274 9.58247 23.8136 8.88828Z"
+                          fill="#163B74"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M23.8178 2.08096C23.9212 1.38689 24.5677 0.908068 25.2618 1.01148L25.0745 2.26821C25.2618 1.01148 25.2624 1.01157 25.263 1.01166L25.2643 1.01186L25.2672 1.0123L25.2743 1.0134L25.2934 1.01647L25.3509 1.02639C25.3978 1.03481 25.4614 1.047 25.5409 1.06388C25.6998 1.09764 25.9221 1.15019 26.2 1.22901C26.7558 1.38664 27.5342 1.6494 28.4724 2.07702C30.3509 2.93324 32.8618 4.44679 35.5025 7.08745C38.1431 9.72812 39.6567 12.239 40.5129 14.1175C40.9405 15.0557 41.2033 15.8341 41.3609 16.3899C41.4397 16.6678 41.4923 16.8901 41.526 17.0491C41.5429 17.1285 41.5551 17.1922 41.5635 17.239L41.5734 17.2965L41.5765 17.3156L41.5776 17.3227L41.578 17.3256L41.5782 17.3269C41.5783 17.3276 41.5784 17.3281 40.3217 17.5154L41.5784 17.3281C41.6818 18.0222 41.203 18.6687 40.5089 18.7721C39.8169 18.8752 39.1721 18.3994 39.0659 17.7086C39.0659 17.7086 39.0659 17.7086 39.0659 17.7086C39.0659 17.7085 39.0658 17.7084 39.0658 17.7083L39.0624 17.6887C39.0586 17.6675 39.0515 17.63 39.0403 17.5771C39.0178 17.4713 38.9788 17.3042 38.9161 17.0833C38.7908 16.6414 38.5711 15.9844 38.2006 15.1715C37.4605 13.5478 36.1152 11.294 33.7056 8.88435C31.2959 6.4747 29.0421 5.1294 27.4184 4.38935C26.6055 4.01883 25.9485 3.79911 25.5066 3.67378C25.2857 3.61112 25.1186 3.57208 25.0128 3.54961C24.9599 3.53838 24.9224 3.5313 24.9012 3.52748M23.8178 2.08096C23.7147 2.77307 24.1905 3.41787 24.8814 3.52404ZM39.0656 17.7065C39.0655 17.7064 39.0655 17.7063 39.0655 17.7061L39.0655 17.7064L39.0656 17.7065ZM39.0653 17.7047C39.0652 17.7043 39.0652 17.704 39.0651 17.7037C39.0651 17.7037 39.0651 17.7037 39.0651 17.7037L39.0653 17.7047Z"
+                          fill="#163B74"/>
+                </svg>
+
+
+                <span>+7 989 147-54-25</span>
+            </div>
+            <div class="stationary">
+
+                <svg width="43" height="48" viewBox="0 0 43 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.1146 3.01695C37.9152 3.81621 39.5959 4.81043 40.8763 6.26275C41.6666 7.17899 42.0768 8.23168 42.0768 9.47932C42.0768 10.7952 42.0768 12.1111 42.0768 13.4269C42.0367 15.1424 40.9163 16.2341 39.1957 16.2341C38.1053 16.2731 37.0249 16.2341 35.8945 16.2341C34.8441 16.2341 33.7937 16.2341 32.6733 16.2341C30.8027 16.2341 29.7123 15.1717 29.7123 13.349C29.7123 12.0331 29.6722 10.7562 29.7523 9.44033C29.7523 9.07969 29.6422 8.96272 29.3421 8.81651C27.8016 8.1927 26.231 7.90028 24.6204 7.72483C21.3592 7.39343 18.138 7.4714 14.9569 8.16345C14.2866 8.30966 13.6064 8.60208 12.9362 8.74828C12.596 8.8555 12.486 9.0407 12.486 9.40135C12.486 10.7172 12.486 12.0331 12.486 13.349C12.486 15.1034 11.3656 16.1951 9.60494 16.1561C7.43415 16.1561 5.25336 16.1561 3.08257 16.1561C1.28192 16.1561 0.161511 15.0645 0.121496 13.271C0.0814815 12.0623 0.191521 10.8634 0.0814814 9.65477C0.0114559 7.90028 0.721714 6.55517 2.03219 5.41475C3.87286 3.84546 6.08366 2.86099 8.40451 2.05198C13.5764 0.297484 18.9383 -0.316589 24.4403 0.151276C28.4718 0.541163 32.3732 1.34043 36.1146 3.01695Z"
+                          fill="#EA8B2A"/>
+                    <path d="M12.9862 39.8808C14.4447 39.8808 15.6271 38.7287 15.6271 37.3075C15.6271 35.8863 14.4447 34.7343 12.9862 34.7343C11.5276 34.7343 10.3452 35.8863 10.3452 37.3075C10.3452 38.7287 11.5276 39.8808 12.9862 39.8808Z"
+                          fill="#163B74"/>
+                    <path d="M12.9862 24.1391C14.4447 24.1391 15.6271 22.987 15.6271 21.5658C15.6271 20.1446 14.4447 18.9926 12.9862 18.9926C11.5276 18.9926 10.3452 20.1446 10.3452 21.5658C10.3452 22.987 11.5276 24.1391 12.9862 24.1391Z"
+                          fill="#163B74"/>
+                    <path d="M12.9862 32.005C14.4447 32.005 15.6271 30.8529 15.6271 29.4318C15.6271 28.0106 14.4447 26.8585 12.9862 26.8585C11.5276 26.8585 10.3452 28.0106 10.3452 29.4318C10.3452 30.8529 11.5276 32.005 12.9862 32.005Z"
+                          fill="#163B74"/>
+                    <path d="M21.0691 39.8808C22.5277 39.8808 23.7101 38.7287 23.7101 37.3075C23.7101 35.8863 22.5277 34.7343 21.0691 34.7343C19.6106 34.7343 18.4282 35.8863 18.4282 37.3075C18.4282 38.7287 19.6106 39.8808 21.0691 39.8808Z"
+                          fill="#163B74"/>
+                    <path d="M21.0691 24.1391C22.5277 24.1391 23.7101 22.987 23.7101 21.5658C23.7101 20.1446 22.5277 18.9926 21.0691 18.9926C19.6106 18.9926 18.4282 20.1446 18.4282 21.5658C18.4282 22.987 19.6106 24.1391 21.0691 24.1391Z"
+                          fill="#163B74"/>
+                    <path d="M21.0691 32.0148C22.5277 32.0148 23.7101 30.8627 23.7101 29.4415C23.7101 28.0204 22.5277 26.8683 21.0691 26.8683C19.6106 26.8683 18.4282 28.0204 18.4282 29.4415C18.4282 30.8627 19.6106 32.0148 21.0691 32.0148Z"
+                          fill="#163B74"/>
+                    <path d="M21.0691 47.7467C22.5277 47.7467 23.7101 46.5946 23.7101 45.1735C23.7101 43.7523 22.5277 42.6002 21.0691 42.6002C19.6106 42.6002 18.4282 43.7523 18.4282 45.1735C18.4282 46.5946 19.6106 47.7467 21.0691 47.7467Z"
+                          fill="#163B74"/>
+                    <path d="M29.1521 24.1391C30.6106 24.1391 31.793 22.987 31.793 21.5658C31.793 20.1446 30.6106 18.9926 29.1521 18.9926C27.6935 18.9926 26.5111 20.1446 26.5111 21.5658C26.5111 22.987 27.6935 24.1391 29.1521 24.1391Z"
+                          fill="#163B74"/>
+                    <path d="M29.1521 32.0148C30.6106 32.0148 31.793 30.8627 31.793 29.4415C31.793 28.0204 30.6106 26.8683 29.1521 26.8683C27.6935 26.8683 26.5111 28.0204 26.5111 29.4415C26.5111 30.8627 27.6935 32.0148 29.1521 32.0148Z"
+                          fill="#163B74"/>
+                    <path d="M29.1521 39.8808C30.6106 39.8808 31.793 38.7287 31.793 37.3075C31.793 35.8863 30.6106 34.7343 29.1521 34.7343C27.6935 34.7343 26.5111 35.8863 26.5111 37.3075C26.5111 38.7287 27.6935 39.8808 29.1521 39.8808Z"
+                          fill="#163B74"/>
+                </svg>
+
+                <span>
+                    +7 495 532-52-03
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+</header>
+
+<article class="main">
+
+
+    <div class="first-block">
+        <div class="container">
+            <h1 class="main-title">Резервный источник энергии — гарантия автономного, аварийного и бесперебойного
+                электроснабжения.
+            </h1>
+            <div class="main-description">
+                <p>
+                    Наша компания «OnlyEnergy» предоставляет в аренду дизельные генераторы в Москве и Московской
+                    области, а
+                    так
+                    же по всей России. Мы предлагаем не только мобильные электростанции, но и дополнительное
+                    оборудование
+                    для
+                    энергоснабжения под ключ.
+                    Все вопросы по организации работ по доставке, монтажу, пусконаладке, обслуживанию мы берем на себя!
+                </p>
+
+                <p>
+                    Аренда оборудования представленного на сайте нужна для проведения массовых мероприятий, устранения
+                    последствий чрезвычайных ситуаций и прочее.
+                </p>
+            </div>
+
+            <div class="main-action">
+                <button class="button">
+                    <a href="https://wa.me/79891475425">Связаться с нами</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-block">
+        <div class="container">
+            <h2 class="second-title">
+                Мы предлагаем невысокую стоимость проката генераторов и дополнительных услуг.
+            </h2>
+
+            <div class="second-description">
+                Аренда электростанции обойдётся намного дешевле покупки. Вам не придётся тратить средства на ремонт и
+                приобретение оригинальных запчастей. Вам не нужно будет нанимать собственного оператора, выделять деньги
+                на
+                зарплату, налоги, больничные и отпускные.
+                <div>
+                    <span class="bold"> Мы предоставим:</span> Топливо, водитель- оператора, и доставка на объект в
+                    Москве и
+                    московской области за 3-5 часов.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="third-block">
+        <div class="container">
+            <h2 class="third-title">
+                Что входит в стоимость аренды генератора:
+            </h2>
+            <div class="list-container">
+                <ul class="list">
+
+                    <li>Дизельный генератор</li>
+                    <li>Техническое обслуживание</li>
+                    <li>Услуги оператора</li>
+                    <li>Доставка агрегата на объект и обратно</li>
+                    <li>Доставка топлива</li>
+                    <li>Дополнительная топливная ёмкость (бак)</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="fourth-block">
+        <div class="container">
+            <p class="fourth-paragraph">
+                Арендовать генератор и дополнительное оборудование, узнать условия и точную стоимость услуги проката под
+                ключ и о наших специальных предложениях вы можете по телефону в Москве:
+            </p>
+
+            <div class="phones"><p>+7 989 147-54-25</p>
+                <p> +7 495 532-52-03</p></div>
+        </div>
+    </div>
+
+</article>
+
+<section class="goods">
+    <div class="container">
+
+        <div class="generators">
+            <h3 class="goods-title">
+                Генераторы
+            </h3>
+            <div class="goods-cards">
+                <div class="goods-card generator-card ">
+                    <div class="card-image">
+                        <img src="images/ge6500.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Бензиновый генератор GE 6500 5 кВт (6 кВА)</h3>
+                        <span class="price"> ??????? ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/GP16SH.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GP 16 SH/PW 10 кВт (15 кВА)</h3>
+                        <span class="price"> 17 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/ge20.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция (ДЭС) GE 20 PSX 10 кВт (15 кВА)</h3>
+                        <span class="price"> 17 500 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/gp33.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GP 33 S/I 20 кВт (35 кВА)</h3>
+                        <span class="price"> 17 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/ge55.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GE 55 PSX EAS 40 кВт (50 кВА)</h3>
+                        <span class="price"> 17 500 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/ge65.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GE 65 PSX EAS
+                            Генератор 50 кВт (66 кВА)</h3>
+                        <span class="price"> 18 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/ge85.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GE 85 PSX EAS
+                            Генератор 50 кВт (66 кВА)</h3>
+                        <span class="price"> 19 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/ge115.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GE 115 PSX EAS
+                            Генератор 80 кВт (100 кВА)</h3>
+                        <span class="price"> 21 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/gp110.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GP 110 S/V
+                            Генератор 80 кВт (100 кВА)</h3>
+                        <span class="price"> 21 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/ge165.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GP 110 S/V
+                            Генератор 80 кВт (100 кВА)</h3>
+                        <span class="price"> 21 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/gp145.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GP 145 S/I: генератор для съемки 100 кВт (150 кВА)</h3>
+                        <span class="price"> 21 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/g275.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция G275QX
+                            Генератор 200 кВт (275 кВА)</h3>
+                        <span class="price"> 38 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/g275vps.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GE 275 VPS - VPSX
+                            Генератор 200 кВт (275 кВА)</h3>
+                        <span class="price"> 38 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/gp280.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция GP 280 S/I
+                            Генератор 200 кВт (275 кВА)</h3>
+                        <span class="price"> 38 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/gp410.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция (ДГУ) GP 410 S/V
+                            Генератор 300 кВт (400 кВА)</h3>
+                        <span class="price"> 60 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <div class="goods-card generator-card">
+                    <div class="card-image">
+                        <img src="images/g440.png">
+                    </div>
+                    <div class="product-list">
+                        <h3>Дизельная электростанция G 440 QX
+                            Генератор 330 кВт (440 кВА)</h3>
+                        <span class="price"> 60 000 ₽/сутки</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cables-block">
+            <h3 class="goods-title">
+                Кабели
+            </h3>
+
+            <div class="cables-cards">
+                <!--                1-->
+                <div class="goods-card cables ">
+                    <div class="card-image">
+                        <img src="images/1-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель для подключения к щиту 380 (голые концы - розетка CEE 63A) 15 м</h3>
+                        <span class="price"> От 800 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--2-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/2-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 16A/5P — CEE 16A/5P, IP44, 20 м</h3>
+                        <span class="price"> От 700 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/3-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 125A/5P — CEE 125A/5P, IP67, 20 м</h3>
+                        <span class="price"> От 700 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--4-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/4-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 125A/5P — CEE 125A/5P, IP67, 20 м</h3>
+                        <span class="price"> От 1 500 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--5-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/5-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 16A/5P — CEE 16A/5P, IP44, 5 м</h3>
+                        <span class="price"> От 250 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--6-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/6-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 32A/5P — CEE 32A/5P, IP67, 30 м</h3>
+                        <span class="price"> От 1 200 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--7-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/7-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 63A/5P — CEE 32A/5P, IP67, 10 м</h3>
+                        <span class="price"> От 750 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--8-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/8-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 125A/5P — CEE 125A/5P, IP67, 5 м</h3>
+                        <span class="price"> От 750 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--9-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/7-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 63A/5P — CEE 32A/5P, IP67, 20 м</h3>
+                        <span class="price"> От 500 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--10-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/6-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 32A/5P — CEE 32A/5P, IP67, 5 м</h3>
+                        <span class="price"> От 300 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--11-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/7-cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 63A/5P — CEE 32A/5P, IP67, 30 м</h3>
+                        <span class="price"> От 1 200 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--12-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/11cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 125A/5P — CEE 125A/5P, IP67, 30 м</h3>
+                        <span class="price"> От 2 500 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--13-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/13cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>иловой кабель 380V, CEE 32A/5P — CEE 32A/5P, IP67, 20 м</h3>
+                        <span class="price"> От 900 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--14-->
+                <div class="goods-card cables">
+                    <div class="card-image">
+                        <img src="images/14cable.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Силовой кабель 380V, CEE 63A/5P — CEE 32A/5P, IP67, 20 м</h3>
+                        <span class="price"> От 1 000 ₽/сутки</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="extension">
+            <h3 class="goods-title">
+                Переносные распределительные устройства
+            </h3>
+
+            <div class="cables-cards">
+                <!--                1-->
+                <div class="goods-card extension-card">
+                    <div class="card-image">
+                        <img src="images/1.1.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Переносное распределительное устройство IP44
+                            Встраиваемая вилка CEE 32A/5p
+                            <span class="description">
+                                Розетка Schuko 16A/250V - 2 шт.
+                           </span>
+                            <span class="description">
+                                Розетка CEE 32A/5p - 1 шт.
+                            </span>
+                        </h3>
+                        <span class="price"> 150 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--2-->
+                <div class="goods-card extension-card">
+                    <div class="card-image">
+                        <img src="images/1.2.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Переносное распределительное устройство IP44
+                            Встраиваемая вилка CEE 32A/5p
+                            <span class="description">
+                                Розетка CEE 16A/5p - 3 шт.
+                            </span>
+                        </h3>
+                        <span class="price"> 200 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="goods-card extension-card">
+                    <div class="card-image">
+                        <img src="images/1.3.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Переносное распределительное устройство IP44
+                            Кабельная вилка CEE 32A/5p + Кабель H07RN Xtrem 5G4 2 м.
+                            <span class="description">
+                                Розетка Schuko 16A 250V - 2 шт.
+                           </span>
+                            <span class="description">
+                                Розетка CEE 16A/5p - 1 шт.
+                            </span>
+                            <span class="description"> Авт. выкл. 16A/1p - 2 шт. Авт. выкл. 16A/3p - 1 шт.</span>
+                        </h3>
+                        <span class="price"> 800 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--4-->
+                <div class="goods-card extension-card">
+                    <div class="card-image">
+                        <img src="images/1.4.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Переносное распределительное устройство IP44
+                            <span class="description">
+                                Встраиваемая вилка CEE 125A/5p - 1 шт.
+                           </span>
+                            <span class="description">
+                                Розетка CEE 16A/5p - 8 шт.
+                          </span>
+                            <span class="description">
+                            Авт. выкл. 16A/3 - 8 шт.
+                        </span>
+                        </h3>
+                        <span class="price"> 4 200 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--5-->
+                <div class="goods-card extension-card">
+                    <div class="card-image">
+                        <img src="images/1.5.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Переносное распределительное устройство IP44
+                            <span class="description">
+                                Встраиваемая вилка СЕЕ 63A/5p - 1 шт.
+                           </span>
+                            <span class="description">
+                                Розетка CEE 32A/3p - 2 шт. Розетка CEE 16A/3p - 4 шт.
+                            </span>
+                            <span class="description">
+                                Розетка Schuko 16A 250V - 9 шт.
+                            </span>
+                            <span class="description">
+                                Авт. выкл. 63A/3 - 1 шт.
+                            </span>
+                            <span class="description">
+                                Авт. выкл. 32A/1 - 2 шт.
+                            </span>
+                            <span class="description">
+                                Авт. выкл. 16A/1 - 13 шт.
+                            </span>
+                        </h3>
+                        <span class="price"> 2 200 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--6-->
+                <div class="goods-card extension-card">
+                    <div class="card-image">
+                        <img src="images/1.6.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Переносное распределительное устройство IP44
+                            <span class="description">
+                                Встраиваемая вилка СЕЕ 125A/5p - 1 шт.
+                           </span>
+                            <span class="description">
+                               Розетка CEE 32A/5p - 3 шт. Розетка CEE 16A/3p - 4 шт.
+                           </span>
+                            <span class="description">
+                            Авт. выкл. 32A/3 - 3 шт.
+                           </span>
+                            <span class="description">
+                           Авт. выкл. 16A/1 - 4 шт.
+                           </span>
+                        </h3>
+                        <span class="price"> 4 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--7-->
+                <div class="goods-card extension-card">
+                    <div class="card-image">
+                        <img src="images/1,7.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Переносное распределительное устройство IP44
+                            <span class="description">
+                                Силовой разъем Powerlock, 400А, IP67 - 5 шт.
+                          </span>
+                            <span class="description">
+                          Розетка CEE 125A/5p - 3 шт.
+                          </span>
+                            <span class="description">
+                         Розетка CEE 63A/5p - 3 шт.
+                          </span>
+                            <span class="description">
+                         Розетка CEE 32A/5p - 4 шт.
+                          </span>
+                            <span class="description">
+                            Авт. выкл. 125A/3 - 3 шт.
+                          </span>
+                            <span class="description">
+                             Авт. выкл. 63A/3 - 3 шт.
+                          </span>
+                            <span class="description">
+                              Авт. выкл. 32A/3 - 4 шт.
+                          </span>
+                        </h3>
+                        <span class="price"> 8 000 ₽/сутки</span>
+                    </div>
+                </div>
+                <!--8-->
+                <div class="goods-card extension-card">
+                    <div class="card-image">
+                        <img src="images/1.8.png" alt="">
+                    </div>
+                    <div class="product-list">
+                        <h3>Переносное распределительное устройство IP44
+                            Встраиваемая вилка CEE 32A/5p
+                            <span class="description">
+                            Розетка CEE 32A/5p - 1 шт.
+                          </span>
+                            <span class="description">
+                          Розетка Schuko 16A 250V - 4 шт.
+                          </span>
+                            <span class="description">
+                        Розетка CEE 16A/5p - 2 шт.
+                          </span>
+                            <span class="description">
+                                 Авт. выкл. 32A/3p - 1 шт.
+                          </span>
+                            <span class="description">
+                                  Авт. выкл. 16A/3p - 2 шт.
+                          </span>
+                            <span class="description">
+                                  Авт. выкл. 16A/1p - 3 шт.
+                          </span>
+                        </h3>
+                        <span class="price"> 1 500 ₽/сутки</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="logo">
+            <img src="images/Logo.png" alt="OnlyEnergy">
+        </div>
+
+        <div class="contacts">
+            <div class="mobile">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.6389 1.94425C13.0486 1.01616 14.8384 1.55039 15.6471 2.89808L19.2044 8.82699C20.0188 10.1844 19.6232 11.9422 18.3058 12.8198L15.8269 14.471C15.6272 14.604 15.5963 14.8468 15.7102 15.0101C16.9036 16.7196 18.9622 19.5341 20.7138 21.2857C22.4655 23.0374 25.2804 25.0963 26.9899 26.2896C27.1531 26.4035 27.3958 26.3726 27.5289 26.1731L29.1815 23.6941C30.0593 22.3774 31.8166 21.9822 33.1736 22.7964L39.1027 26.3538C40.4506 27.1626 40.9847 28.953 40.056 30.3627C39.4304 31.3124 38.4923 32.609 37.3555 33.7702C36.2408 34.9089 34.8175 36.0402 33.2051 36.4723C30.935 37.0806 28.2496 36.3069 26.3187 35.5382C24.314 34.7401 22.7697 33.7994 22.6387 33.7189L22.6309 33.7141L22.6122 33.7023L22.5962 33.6919L22.5933 33.69C22.4133 33.5711 17.3555 30.2285 14.563 27.436C11.7707 24.6436 8.42901 19.5872 8.31039 19.4075L8.3076 19.4033L8.29718 19.3873L8.28537 19.3685L8.28063 19.3608C8.2002 19.23 7.2594 17.6857 6.4612 15.6809C5.6924 13.75 4.91855 11.0644 5.5272 8.79422C5.95953 7.18168 7.09131 5.75845 8.23045 4.64391C9.39205 3.50739 10.689 2.5696 11.6389 1.94425ZM13.2451 4.03132C13.1723 4.0129 13.1033 4.0226 13.0362 4.06677C12.1587 4.64448 11.0086 5.481 10.0076 6.46031C8.98426 7.46159 8.23817 8.4957 7.98171 9.45228C7.60462 10.8588 8.07183 12.8564 8.82215 14.7409C9.51979 16.4931 10.3443 17.8641 10.4386 18.0187C10.6621 18.3565 13.8155 23.0946 16.36 25.6391C18.9045 28.1836 23.6427 31.3372 23.9807 31.5609C24.1355 31.6552 25.5064 32.4796 27.2586 33.1772C29.1431 33.9274 31.1407 34.3946 32.5473 34.0177C33.5039 33.7613 34.5382 33.0155 35.5396 31.9925C36.5191 30.9919 37.3559 29.8421 37.9339 28.9647C37.9781 28.8976 37.9878 28.8287 37.9694 28.7558C37.9498 28.6781 37.8954 28.593 37.7952 28.5329L31.8662 24.9755C31.6723 24.8592 31.4213 24.9156 31.2959 25.1037L29.6433 27.5827C28.7426 28.9336 26.9002 29.326 25.5354 28.3733C23.8277 27.1813 20.8442 25.0099 18.9169 23.0826C16.9897 21.1554 14.8186 18.1723 13.6265 16.4646C12.6735 15.0994 13.0664 13.2565 14.4181 12.3561L16.897 10.7048C17.0852 10.5794 17.1417 10.3283 17.0253 10.1344L13.468 4.20552C13.4079 4.10539 13.3228 4.05098 13.2451 4.03132Z"
+                          fill="#EA8B2A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M23.8136 8.88828C23.9001 8.1919 24.5347 7.69746 25.2311 7.78392L25.0745 9.04484C25.2311 7.78392 25.2316 7.78399 25.2321 7.78405L25.2331 7.78418L25.2355 7.78448L25.241 7.7852L25.2554 7.78712L25.2972 7.79312C25.3307 7.79814 25.3755 7.80529 25.4309 7.8151C25.5417 7.83472 25.6951 7.86498 25.8859 7.91008C26.2675 8.00025 26.7994 8.14999 27.4396 8.39314C28.7205 8.87966 30.4353 9.74059 32.2409 11.2452C34.0484 12.7515 35.103 14.1998 35.7107 15.3109C36.0137 15.8649 36.2035 16.331 36.32 16.6735C36.3783 16.8446 36.4182 16.9847 36.4448 17.0892C36.4582 17.1415 36.4682 17.1849 36.4755 17.2189L36.4845 17.2626L36.4877 17.2791L36.489 17.286L36.4895 17.289L36.4898 17.2905C36.4899 17.2912 36.4901 17.2919 35.2393 17.5155L36.4901 17.2919C36.6136 17.9826 36.1537 18.6428 35.4629 18.7663C34.7772 18.8889 34.1216 18.4366 33.9913 17.7542C33.9903 17.7496 33.9875 17.737 33.9824 17.7169C33.9715 17.6744 33.9504 17.5982 33.9143 17.4922C33.8422 17.2804 33.7103 16.9491 33.4812 16.5303C33.0247 15.6957 32.1735 14.4969 30.6141 13.1974C29.0528 11.8964 27.5911 11.169 26.5373 10.7687C26.01 10.5685 25.585 10.4502 25.3014 10.3831C25.1597 10.3496 25.0536 10.329 24.9879 10.3174C24.9551 10.3116 24.9324 10.308 24.9206 10.3063L24.9114 10.3049C24.2184 10.2153 23.7274 9.58247 23.8136 8.88828Z"
+                          fill="#163B74"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M23.8178 2.08096C23.9212 1.38689 24.5677 0.908068 25.2618 1.01148L25.0745 2.26821C25.2618 1.01148 25.2624 1.01157 25.263 1.01166L25.2643 1.01186L25.2672 1.0123L25.2743 1.0134L25.2934 1.01647L25.3509 1.02639C25.3978 1.03481 25.4614 1.047 25.5409 1.06388C25.6998 1.09764 25.9221 1.15019 26.2 1.22901C26.7558 1.38664 27.5342 1.6494 28.4724 2.07702C30.3509 2.93324 32.8618 4.44679 35.5025 7.08745C38.1431 9.72812 39.6567 12.239 40.5129 14.1175C40.9405 15.0557 41.2033 15.8341 41.3609 16.3899C41.4397 16.6678 41.4923 16.8901 41.526 17.0491C41.5429 17.1285 41.5551 17.1922 41.5635 17.239L41.5734 17.2965L41.5765 17.3156L41.5776 17.3227L41.578 17.3256L41.5782 17.3269C41.5783 17.3276 41.5784 17.3281 40.3217 17.5154L41.5784 17.3281C41.6818 18.0222 41.203 18.6687 40.5089 18.7721C39.8169 18.8752 39.1721 18.3994 39.0659 17.7086C39.0659 17.7086 39.0659 17.7086 39.0659 17.7086C39.0659 17.7085 39.0658 17.7084 39.0658 17.7083L39.0624 17.6887C39.0586 17.6675 39.0515 17.63 39.0403 17.5771C39.0178 17.4713 38.9788 17.3042 38.9161 17.0833C38.7908 16.6414 38.5711 15.9844 38.2006 15.1715C37.4605 13.5478 36.1152 11.294 33.7056 8.88435C31.2959 6.4747 29.0421 5.1294 27.4184 4.38935C26.6055 4.01883 25.9485 3.79911 25.5066 3.67378C25.2857 3.61112 25.1186 3.57208 25.0128 3.54961C24.9599 3.53838 24.9224 3.5313 24.9012 3.52748M23.8178 2.08096C23.7147 2.77307 24.1905 3.41787 24.8814 3.52404ZM39.0656 17.7065C39.0655 17.7064 39.0655 17.7063 39.0655 17.7061L39.0655 17.7064L39.0656 17.7065ZM39.0653 17.7047C39.0652 17.7043 39.0652 17.704 39.0651 17.7037C39.0651 17.7037 39.0651 17.7037 39.0651 17.7037L39.0653 17.7047Z"
+                          fill="#163B74"/>
+                </svg>
+
+
+                <span>+7 989 147-54-25</span>
+            </div>
+            <div class="stationary">
+
+                <svg width="43" height="48" viewBox="0 0 43 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.1146 3.01695C37.9152 3.81621 39.5959 4.81043 40.8763 6.26275C41.6666 7.17899 42.0768 8.23168 42.0768 9.47932C42.0768 10.7952 42.0768 12.1111 42.0768 13.4269C42.0367 15.1424 40.9163 16.2341 39.1957 16.2341C38.1053 16.2731 37.0249 16.2341 35.8945 16.2341C34.8441 16.2341 33.7937 16.2341 32.6733 16.2341C30.8027 16.2341 29.7123 15.1717 29.7123 13.349C29.7123 12.0331 29.6722 10.7562 29.7523 9.44033C29.7523 9.07969 29.6422 8.96272 29.3421 8.81651C27.8016 8.1927 26.231 7.90028 24.6204 7.72483C21.3592 7.39343 18.138 7.4714 14.9569 8.16345C14.2866 8.30966 13.6064 8.60208 12.9362 8.74828C12.596 8.8555 12.486 9.0407 12.486 9.40135C12.486 10.7172 12.486 12.0331 12.486 13.349C12.486 15.1034 11.3656 16.1951 9.60494 16.1561C7.43415 16.1561 5.25336 16.1561 3.08257 16.1561C1.28192 16.1561 0.161511 15.0645 0.121496 13.271C0.0814815 12.0623 0.191521 10.8634 0.0814814 9.65477C0.0114559 7.90028 0.721714 6.55517 2.03219 5.41475C3.87286 3.84546 6.08366 2.86099 8.40451 2.05198C13.5764 0.297484 18.9383 -0.316589 24.4403 0.151276C28.4718 0.541163 32.3732 1.34043 36.1146 3.01695Z"
+                          fill="#EA8B2A"/>
+                    <path d="M12.9862 39.8808C14.4447 39.8808 15.6271 38.7287 15.6271 37.3075C15.6271 35.8863 14.4447 34.7343 12.9862 34.7343C11.5276 34.7343 10.3452 35.8863 10.3452 37.3075C10.3452 38.7287 11.5276 39.8808 12.9862 39.8808Z"
+                          fill="#163B74"/>
+                    <path d="M12.9862 24.1391C14.4447 24.1391 15.6271 22.987 15.6271 21.5658C15.6271 20.1446 14.4447 18.9926 12.9862 18.9926C11.5276 18.9926 10.3452 20.1446 10.3452 21.5658C10.3452 22.987 11.5276 24.1391 12.9862 24.1391Z"
+                          fill="#163B74"/>
+                    <path d="M12.9862 32.005C14.4447 32.005 15.6271 30.8529 15.6271 29.4318C15.6271 28.0106 14.4447 26.8585 12.9862 26.8585C11.5276 26.8585 10.3452 28.0106 10.3452 29.4318C10.3452 30.8529 11.5276 32.005 12.9862 32.005Z"
+                          fill="#163B74"/>
+                    <path d="M21.0691 39.8808C22.5277 39.8808 23.7101 38.7287 23.7101 37.3075C23.7101 35.8863 22.5277 34.7343 21.0691 34.7343C19.6106 34.7343 18.4282 35.8863 18.4282 37.3075C18.4282 38.7287 19.6106 39.8808 21.0691 39.8808Z"
+                          fill="#163B74"/>
+                    <path d="M21.0691 24.1391C22.5277 24.1391 23.7101 22.987 23.7101 21.5658C23.7101 20.1446 22.5277 18.9926 21.0691 18.9926C19.6106 18.9926 18.4282 20.1446 18.4282 21.5658C18.4282 22.987 19.6106 24.1391 21.0691 24.1391Z"
+                          fill="#163B74"/>
+                    <path d="M21.0691 32.0148C22.5277 32.0148 23.7101 30.8627 23.7101 29.4415C23.7101 28.0204 22.5277 26.8683 21.0691 26.8683C19.6106 26.8683 18.4282 28.0204 18.4282 29.4415C18.4282 30.8627 19.6106 32.0148 21.0691 32.0148Z"
+                          fill="#163B74"/>
+                    <path d="M21.0691 47.7467C22.5277 47.7467 23.7101 46.5946 23.7101 45.1735C23.7101 43.7523 22.5277 42.6002 21.0691 42.6002C19.6106 42.6002 18.4282 43.7523 18.4282 45.1735C18.4282 46.5946 19.6106 47.7467 21.0691 47.7467Z"
+                          fill="#163B74"/>
+                    <path d="M29.1521 24.1391C30.6106 24.1391 31.793 22.987 31.793 21.5658C31.793 20.1446 30.6106 18.9926 29.1521 18.9926C27.6935 18.9926 26.5111 20.1446 26.5111 21.5658C26.5111 22.987 27.6935 24.1391 29.1521 24.1391Z"
+                          fill="#163B74"/>
+                    <path d="M29.1521 32.0148C30.6106 32.0148 31.793 30.8627 31.793 29.4415C31.793 28.0204 30.6106 26.8683 29.1521 26.8683C27.6935 26.8683 26.5111 28.0204 26.5111 29.4415C26.5111 30.8627 27.6935 32.0148 29.1521 32.0148Z"
+                          fill="#163B74"/>
+                    <path d="M29.1521 39.8808C30.6106 39.8808 31.793 38.7287 31.793 37.3075C31.793 35.8863 30.6106 34.7343 29.1521 34.7343C27.6935 34.7343 26.5111 35.8863 26.5111 37.3075C26.5111 38.7287 27.6935 39.8808 29.1521 39.8808Z"
+                          fill="#163B74"/>
+                </svg>
+
+                <span>
+                    +7 495 532-52-03
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script src="scripts/jquery-3.6.1.js"></script>
+<script src="scripts/jquery.matchHeight.js"></script>
+<script src="slick/slick.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
