@@ -124,7 +124,7 @@
 .button a {
     text-decoration: none;
     color: #01265E;
-   font-family: OnestRegular, sans-serif;
+    font-family: OnestRegular, sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
@@ -330,4 +330,109 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width: 1220px ) {
+    .container {
+        padding: 20px;
+    }
+
+    .goods-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 850px ) {
+
+    .header {
+        padding: 0;
+    }
+
+    .header .container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .contacts svg {
+        width: 30px;
+    }
+
+    .mobile span, .stationary span {
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 720px){
+  .goods-card {
+      max-width: 100%;
+  }
+
+    .product-list {
+        background: #ffffffed;
+    }
+}
+
+@media screen and (max-width: 465px){
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .main-description p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .button {
+        width: 280px;
+    }
+
+    .second-title {
+        font-size: 25px;
+    }
+
+    .second-description {
+        font-size: 15px;
+    }
+
+    .goods-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .third-title {
+        font-size: 25px;
+    }
+
+    .list li {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 350px){
+
+    .main-title {
+        font-size: 20px;
+    }
+
+    .second-title {
+        font-size: 20px;
+    }
+    .goods-title {
+        font-size: 15px;
+    }
 }

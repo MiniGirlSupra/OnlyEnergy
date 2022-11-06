@@ -9,18 +9,18 @@ $(document).ready(function () {
         arrows: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1040,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 3,
                     infinite: true,
                     dots: true
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 720,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 2
                 }
             },
@@ -47,7 +47,7 @@ $(document).ready(function () {
         arrows: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1040,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 3,
@@ -56,7 +56,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 720,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 2
