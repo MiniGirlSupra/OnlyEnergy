@@ -55,6 +55,17 @@
     width: 220px;
 }
 
+.address {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 10px;
+}
+
+.address span {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+}
+
 .contacts {
     display: flex;
 }
@@ -70,7 +81,7 @@
 .mobile svg, .mobile span, .stationary svg, .stationary span {
     vertical-align: middle;
     font-family: Roboto, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .main {
@@ -332,6 +343,18 @@
     align-items: center;
 }
 
+/*тут перенести стрелки вниз*/
+@media screen and (max-width: 1224px) {
+    .slick-prev {
+        left: 2px;
+        z-index: 1;
+    }
+
+    .slick-next {
+        right: 5px;
+    }
+}
+
 @media screen and (max-width: 1220px ) {
     .container {
         padding: 20px;
@@ -350,7 +373,7 @@
 
     .header .container {
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: 15px;
     }
 
     .contacts svg {
@@ -371,17 +394,17 @@
     }
 }
 
-@media screen and (max-width: 720px){
-  .goods-card {
-      max-width: 100%;
-  }
+@media screen and (max-width: 720px) {
+    .goods-card {
+        max-width: 100%;
+    }
 
     .product-list {
         background: #ffffffed;
     }
 }
 
-@media screen and (max-width: 465px){
+@media screen and (max-width: 465px) {
 
     .contacts {
         display: flex;
@@ -397,6 +420,7 @@
         font-size: 15px;
         line-height: 20px;
     }
+
     .button {
         width: 280px;
     }
@@ -423,7 +447,8 @@
         font-size: 15px;
     }
 }
-@media screen and (max-width: 350px){
+
+@media screen and (max-width: 350px) {
 
     .main-title {
         font-size: 20px;
@@ -432,6 +457,7 @@
     .second-title {
         font-size: 20px;
     }
+
     .goods-title {
         font-size: 15px;
     }
